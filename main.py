@@ -1,3 +1,2 @@
-x="Donkey"
 while True:
-  ev3.speaker.say(x)
+  ev3.speaker.play_file(/home/robot/first/rickroll)
