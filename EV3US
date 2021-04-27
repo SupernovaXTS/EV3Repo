@@ -11,5 +11,6 @@ ev3 = EV3Brick()
 US = ev3d.Ultrasonicsensor(1)
 dist = US.Distance()
 pressed = ev3d.TouchSensor.Pressed()
-if pressed == "True":
-  print(dist())
+While True:
+  if pressed == True:
+    print(dist())
