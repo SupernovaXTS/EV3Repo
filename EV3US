@@ -22,5 +22,5 @@ TS = TouchSensor(Port.S1)
 
 while True:
     if TS.pressed():
-        
+        screen.print(US.Distance())
         print(US.distance())
