@@ -1,3 +1,4 @@
+
 from pybricks.hubs import EV3Brick
 import pybricks.ev3devices as ev3d
 from pybricks.parameters import Port, Direction, Color, Button
@@ -9,4 +10,6 @@ ev3 = EV3Brick()
 
 US = ev3d.Ultrasonicsensor(1)
 dist = US.Distance()
-print(dist)
+pressed = ev3d.TouchSensor.Pressed()
+if pressed == "True":
+  print(dist())
