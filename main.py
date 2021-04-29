@@ -23,4 +23,4 @@ TS = TouchSensor(Port.S1)
 while True:
     if TS.pressed():
         ev3.screen.print(US.Distance())
-        print(US.distance())
+        print(US.distance()/10)
